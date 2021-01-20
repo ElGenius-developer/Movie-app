@@ -24,11 +24,13 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
     // TODO: implement initState
     super.initState();
     _movies = widget.movies;
+    tabController = TabController();
   }
   @override
   void dispose() {
     // TODO: implement dispose
     super.dispose();
+   tabController.dispose();
   }
 
   @override
